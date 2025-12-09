@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio of a website designer & social media marketer — UI/UX, landing pages, ads, content strategy, and growth."/>
+  <title>Portfolio — Web Designer & Social Media Marketer</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom styles */
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(2,6,23,0.15); }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased leading-normal">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 backdrop-blur-md glass border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-orange-400 rounded-lg flex items-center justify-center font-bold">FD</div>
+        <div class="hidden sm:block">
+          <div class="font-semibold">Fortune Design</div>
+          <div class="text-xs text-slate-400">Web Designer & Social Marketer</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-white">Services</a>
+        <a href="#portfolio" class="hover:text-white">Portfolio</a>
+        <a href="#testimonials" class="hover:text-white">Testimonials</a>
+        <a href="#contact" class="text-slate-900 bg-white px-4 py-2 rounded-md font-medium">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-md border border-slate-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5h14a1 1 0 010 2H3a1 1 0 110-2zm0 4h14a1 1 0 010 2H3a1 1 0 110-2zm0 4h14a1 1 0 010 2H3a1 1 0 110-2z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="text-slate-900 bg-white px-4 py-2 rounded-md w-max">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold">I design beautiful websites & grow brands on social media.</h1>
+      <p class="mt-4 text-slate-300">I build conversion-focused websites, high-performing landing pages and run social ad campaigns that turn visitors into customers. Specialised in small businesses, creators and e-commerce.</p>
+      <div class="mt-6 flex gap-4">
+        <a href="#contact" class="bg-gradient-to-r from-pink-500 to-orange-400 px-5 py-3 rounded-md font-medium text-slate-900">Work with me</a>
+        <a href="#portfolio" class="border border-slate-700 px-5 py-3 rounded-md">See portfolio</a>
+      </div>
+      <div class="mt-8 grid grid-cols-2 gap-4 text-sm text-slate-400">
+        <div>
+          <div class="text-2xl font-semibold">+45</div>
+          <div>Projects completed</div>
+        </div>
+        <div>
+          <div class="text-2xl font-semibold">+30%</div>
+          <div>Avg. ad ROAS improvement</div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="w-full h-80 rounded-2xl overflow-hidden card-hover transition-transform">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop" alt="design desk" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -bottom-6 right-6 bg-gradient-to-tr from-white/10 to-white/5 p-4 rounded-lg border border-slate-700">
+        <div class="text-xs text-slate-300">Recent project</div>
+        <div class="font-medium">E-commerce landing + paid ads</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-slate-800/40 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold">Services</h2>
+      <p class="text-slate-400 mt-2">End-to-end productized services for web + social growth.</p>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800 card-hover transition-transform">
+          <h3 class="font-semibold">Website Design</h3>
+          <p class="mt-2 text-slate-400 text-sm">Responsive UI, performance-focused builds (Wix, WordPress, custom HTML/CSS).</p>
+        </div>
+        <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800 card-hover">
+          <h3 class="font-semibold">Landing Pages</h3>
+          <p class="mt-2 text-slate-400 text-sm">High-converting sales & lead capture pages with A/B testing and analytics.</p>
+        </div>
+        <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800 card-hover">
+          <h3 class="font-semibold">Ads & Campaigns</h3>
+          <p class="mt-2 text-slate-400 text-sm">Facebook & Google ads setup, creatives, funnels and conversion tracking.</p>
+        </div>
+        <div class="p-6 bg-slate-900/30 rounded-xl border border-slate-800 card-hover">
+          <h3 class="font-semibold">Content & Strategy</h3>
+          <p class="mt-2 text-slate-400 text-sm">Social content calendars, reels, ad copy and community growth plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold">Selected Work</h2>
+    <p class="text-slate-400 mt-2">A mix of websites, landing pages and social ad creatives.</p>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- card 1 -->
+      <article class="bg-slate-800/40 rounded-xl overflow-hidden border border-slate-800">
+        <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop" alt="project">
+        <div class="p-4">
+          <h4 class="font-semibold">Shopify Store Redesign</h4>
+          <p class="text-sm text-slate-400 mt-2">Result: 28% increase in conversion and simplified UX for mobile shoppers.</p>
+        </div>
+      </article>
+      <!-- card 2 -->
+      <article class="bg-slate-800/40 rounded-xl overflow-hidden border border-slate-800">
+        <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop" alt="project">
+        <div class="p-4">
+          <h4 class="font-semibold">Landing Page & Ads</h4>
+          <p class="text-sm text-slate-400 mt-2">Result: Cost-per-lead dropped by 40% after new creative and targeting.</p>
+        </div>
+      </article>
+      <!-- card 3 -->
+      <article class="bg-slate-800/40 rounded-xl overflow-hidden border border-slate-800">
+        <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1400&auto=format&fit=crop" alt="project">
+        <div class="p-4">
+          <h4 class="font-semibold">Portfolio Website</h4>
+          <p class="text-sm text-slate-400 mt-2">Built a fast portfolio with performance optimizations and CMS integration.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="bg-slate-800/20 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold">Testimonials</h2>
+      <div class="mt-6 grid sm:grid-cols-2 gap-6">
+        <blockquote class="p-6 bg-slate-900/30 rounded-xl border border-slate-800">
+          <p class="text-slate-400">"Transformed our website and cut ad spend while increasing leads — highly recommend."</p>
+          <footer class="mt-4 text-sm text-slate-300">— Amina, Founder</footer>
+        </blockquote>
+        <blockquote class="p-6 bg-slate-900/30 rounded-xl border border-slate-800">
+          <p class="text-slate-400">"Quick, professional and great communication. The landing page converted from day one."</p>
+          <footer class="mt-4 text-sm text-slate-300">— Daniel, E-commerce</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold">Let's build something</h2>
+    <p class="text-slate-400 mt-2">Tell me about your project — I usually reply within 24 hours.</p>
+
+    <form id="contactForm" class="mt-6 grid md:grid-cols-2 gap-6">
+      <input name="name" required placeholder="Your name" class="p-3 rounded-md bg-slate-900 border border-slate-800" />
+      <input name="email" type="email" required placeholder="Email" class="p-3 rounded-md bg-slate-900 border border-slate-800" />
+      <input name="budget" placeholder="Budget (optional)" class="p-3 rounded-md bg-slate-900 border border-slate-800" />
+      <select name="service" class="p-3 rounded-md bg-slate-900 border border-slate-800">
+        <option>Website design</option>
+        <option>Landing page</option>
+        <option>Ads & Campaigns</option>
+        <option>Social content strategy</option>
+      </select>
+      <textarea name="message" placeholder="Describe your project" rows="5" class="p-3 rounded-md bg-slate-900 border border-slate-800 md:col-span-2"></textarea>
+      <div class="md:col-span-2 flex gap-4 items-center">
+        <button type="submit" class="bg-gradient-to-r from-pink-500 to-orange-400 px-6 py-3 rounded-md font-medium text-slate-900">Send message</button>
+        <div id="formStatus" class="text-sm text-slate-400"></div>
+      </div>
+    </form>
+
+    <div class="mt-8 text-slate-400 text-sm">Or email me at <a href="mailto:you@example.com" class="text-white underline">you@example.com</a></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-sm text-slate-400">© <span id="year"></span> Fortune Design — Web & Social</div>
+      <div class="flex gap-4">
+        <a href="#" aria-label="Twitter" class="text-slate-400 hover:text-white">Twitter</a>
+        <a href="#" aria-label="LinkedIn" class="text-slate-400 hover:text-white">LinkedIn</a>
+        <a href="#" aria-label="Dribbble" class="text-slate-400 hover:text-white">Dribbble</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small interactions
+    document.getElementById('menuBtn').addEventListener('click', ()=>{
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+    // form handler: emulate sending (replace with real endpoint)
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Sending...';
+      // emulate async send
+      setTimeout(()=>{
+        status.textContent = 'Message sent — I will reply to your email.';
+        this.reset();
+      }, 800);
+    });
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
